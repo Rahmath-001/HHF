@@ -15,6 +15,7 @@ import CallToAction from "../components/CallToAction";
 // import BlogHome from "../components/BlogHome";
 import Map from "../components/Map";
 import CallToActionTwo from "../components/CallToActionTwo";
+import AboutArea from '../components/AboutArea';
 
 const HomePage = () => {
     return (
@@ -22,11 +23,12 @@ const HomePage = () => {
           <NavOne />
           <SliderOne />
           {/* <EntryArea /> */}
-          <HiwArea />
+          {/* <HiwArea /> */}
           <ServiceArea />
           <MixerArea />
-          {/* <CausesArea /> */}
-          <ClientsLogo />
+          <AboutArea/>
+          <CausesArea />
+          {/* <ClientsLogo /> */}
           <HelpingArea />
           <TeamArea />
           <CallToAction />
