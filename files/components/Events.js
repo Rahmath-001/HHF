@@ -10,17 +10,17 @@ const Events = () => {
                         <div className="blog-content">
                             <div className="blog-item blog-item1">
                                 <div className="blog-img">
-                                    <img src="/images/img7.jpg" alt="" />
-                            <span className="blog__tag blog__tag1">
-                                <span className="date__num-text">Every Friday</span>
-                                {/* <span className="date__mon-text">may</span> */}
-                            </span>
+                                    <img src="/images/iftar1.jpg" alt="" className="w-full h-80 object-cover" />
+                                    <span className="blog__tag blog__tag1">
+                                        <span className="date__num-text">Every Friday</span>
+                                    </span>
                                 </div>
                                 <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/events-detail">Food Distribution</Link></h3>
+                                    <h3 className="blog__title">
+                                        <Link href="/events-detail">Food Distribution</Link>
+                                    </h3>
                                     <ul className="blog__list">
                                         <li className="blog__dot-active">8:00am to 2:00pm</li>
-                                        {/* <li>San marcos</li> */}
                                     </ul>
                                 </div>
                             </div>
@@ -30,17 +30,15 @@ const Events = () => {
                         <div className="blog-content">
                             <div className="blog-item blog-item2">
                                 <div className="blog-img">
-                                    <img src="/images/img8.jpg" alt="" />
-                            {/* <span className="blog__tag blog__tag2">
-                                <span className="date__num-text">9</span>
-                                <span className="date__mon-text">mar</span>
-                            </span> */}
+                                    <img src="/images/bloodDonation2.jpg" alt="" className="w-full h-80 object-cover" />
                                 </div>
                                 <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/events-detail">blood donation camp</Link></h3>
+                                    <h3 className="blog__title">
+                                        <Link href="/events-detail">Blood Donation Camp</Link>
+                                    </h3>
                                     <ul className="blog__list">
                                         <li className="blog__dot-active">8:00am to 2:00pm</li>
-                                        <li>San marcos</li>
+                                        <li>San Marcos</li>
                                     </ul>
                                 </div>
                             </div>
@@ -50,17 +48,15 @@ const Events = () => {
                         <div className="blog-content">
                             <div className="blog-item blog-item3">
                                 <div className="blog-img">
-                                    <img src="/images/img9.jpg" alt="" />
-                            {/* <span className="blog__tag blog__tag3">
-                                <span className="date__num-text">4</span>
-                                <span className="date__mon-text">mar</span>
-                            </span> */}
+                                    <img src="/images/img9.jpg" alt="" className="w-full h-80 object-cover" />
                                 </div>
                                 <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/events-detail">health camp</Link></h3>
+                                    <h3 className="blog__title">
+                                        <Link href="/events-detail">Health Camp</Link>
+                                    </h3>
                                     <ul className="blog__list">
                                         <li className="blog__dot-active">8:00am to 2:00pm</li>
-                                        <li>San marcos</li>
+                                        <li>San Marcos</li>
                                     </ul>
                                 </div>
                             </div>
@@ -70,17 +66,15 @@ const Events = () => {
                         <div className="blog-content">
                             <div className="blog-item blog-item4">
                                 <div className="blog-img">
-                                    <img src="/images/img16.jpg" alt="" />
-                            {/* <span className="blog__tag blog__tag4">
-                                <span className="date__num-text">2</span>
-                                <span className="date__mon-text">mar</span>
-                            </span> */}
+                                    <img src="/images/img16.jpg" alt="" className="w-full h-80 object-cover" />
                                 </div>
                                 <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/events-detail">relief camp</Link></h3>
+                                    <h3 className="blog__title">
+                                        <Link href="/events-detail">Relief Camp</Link>
+                                    </h3>
                                     <ul className="blog__list">
                                         <li className="blog__dot-active">8:00am to 2:00pm</li>
-                                        <li>San marcos</li>
+                                        <li>San Marcos</li>
                                     </ul>
                                 </div>
                             </div>
@@ -90,17 +84,15 @@ const Events = () => {
                         <div className="blog-content">
                             <div className="blog-item blog-item1">
                                 <div className="blog-img">
-                                    <img src="/images/img17.jpg" alt="" />
-                            {/* <span className="blog__tag blog__tag1">
-                                <span className="date__num-text">22</span>
-                                <span className="date__mon-text">mar</span>
-                            </span> */}
+                                    <img src="/images/waterProject.jpg" alt="" className="w-full h-80 object-cover" />
                                 </div>
                                 <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/events-detail">borwell construction</Link></h3>
+                                    <h3 className="blog__title">
+                                        <Link href="/events-detail">Borwell Construction</Link>
+                                    </h3>
                                     <ul className="blog__list">
                                         <li className="blog__dot-active">8:00am to 2:00pm</li>
-                                        <li>San marcos</li>
+                                        <li>San Marcos</li>
                                     </ul>
                                 </div>
                             </div>
@@ -110,18 +102,18 @@ const Events = () => {
                         <div className="blog-content">
                             <div className="blog-item blog-item2">
                                 <div className="blog-img">
-                                    <img src="/images/img18.jpg" alt="" />
-                            <span className="blog__tag blog__tag2">
-                                <span className="date__num-text">Food Distribution</span>
-                                {/* <span className="date__mon-text">fed</span> */}
-                            </span>
+                                    <img src="/images/img18.jpg" alt="" className="w-full h-80 object-cover" />
+                                    <span className="blog__tag blog__tag2">
+                                        <span className="date__num-text">Food Distribution</span>
+                                    </span>
                                 </div>
                                 <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/events-detail">Fatima old age home </Link>
+                                    <h3 className="blog__title">
+                                        <Link href="/events-detail">Fatima Old Age Home</Link>
                                     </h3>
                                     <ul className="blog__list">
                                         <li className="blog__dot-active">8:00am to 2:00pm</li>
-                                        <li>San marcos</li>
+                                        <li>San Marcos</li>
                                     </ul>
                                 </div>
                             </div>

@@ -3,121 +3,159 @@ import Link from 'next/link';
 
 const Causes = () => {
     return (
-        <section className="causes-area causes-area2">
-            <div className="container">
-                <div className="row blog-content-wrap">
-                    <div className="col-lg-4">
-                        <div className="blog-content">
-                            <div className="blog-item blog-item1">
+        <section className="causes-area causes-area2 py-8">
+            <div className="container mx-auto">
+                <div className="row blog-content-wrap flex flex-wrap">
+                    <div className="col-lg-4 w-full md:w-1/3 p-4">
+                        <div className="blog-content bg-white shadow-lg rounded-lg overflow-hidden">
+                            <div className="blog-item">
                                 <div className="blog-img">
-                                    <img src="/images/img1.jpg" alt="" />
+                                    <img 
+                                        src="/images/rationKit4.jpeg" 
+                                        alt="" 
+                                        className="w-full h-64 object-cover" 
+                                    />
                                 </div>
-                                <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/causes-detail">Ration-kit Distribution</Link>
+                                <div className="blog-inner-content p-4">
+                                    <h3 className="blog__title text-lg font-semibold mb-2">
+                                        <Link href="/causes-detail">Ration-kit Distribution</Link>
                                     </h3>
-                                    <p className="blog__desc">Aliq is notm hendr erit a augue insu image pellen tes.</p>
-                                    {/* <ul className="blog__list">
-                                        <li><i className="icon-target"></i> Goal: <span>$30,000</span></li>
-                                        <li><i className="fa fa-line-chart"></i> Raised: <span>25,270</span></li>
-                                    </ul> */}
-                                    <Link href="/donate" className="theme-btn">donate now</Link>
+                                    <p className="blog__desc text-sm text-gray-600 mb-4">
+                                        Aliq is notm hendr erit a augue insu image pellen tes.
+                                    </p>
+                                    <Link href="/donate" className="theme-btn bg-blue-500 text-white py-2 px-4 rounded-lg">
+                                        Donate Now
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4">
-                        <div className="blog-content">
-                            <div className="blog-item blog-item2">
+
+                    <div className="col-lg-4 w-full md:w-1/3 p-4">
+                        <div className="blog-content bg-white shadow-lg rounded-lg overflow-hidden">
+                            <div className="blog-item">
                                 <div className="blog-img">
-                                    <img src="/images/img2.jpg" alt="" />
-                                        {/* <span className="blog__tag"><i className="fa fa-flash"></i> trending</span> */}
+                                    <img 
+                                        src="/images/rationKit7.jpeg" 
+                                        alt="" 
+                                        className="w-full h-64 object-cover" 
+                                    />
                                 </div>
-                                <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/causes-detail">Pention for single mothers</Link></h3>
-                                    <p className="blog__desc">Aliq is notm hendr erit a augue insu image pellen tes.</p>
-                                    {/* <ul className="blog__list">
-                                        <li><i className="icon-target"></i> Goal: <span>$30,000</span></li>
-                                        <li><i className="fa fa-line-chart"></i> Raised: <span>25,270</span></li>
-                                    </ul> */}
-                                    <Link href="/donate" className="theme-btn">donate now</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4">
-                        <div className="blog-content">
-                            <div className="blog-item blog-item3">
-                                <div className="blog-img">
-                                    <img src="/images/img3.jpg" alt="" />
-                                </div>
-                                <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/causes-detail">Al-Noora Quran Academy</Link>
+                                <div className="blog-inner-content p-4">
+                                    <h3 className="blog__title text-lg font-semibold mb-2">
+                                        <Link href="/causes-detail">Pension for Single Mothers</Link>
                                     </h3>
-                                    <p className="blog__desc">Aliq is notm hendr erit a augue insu image pellen tes.</p>
-                                    {/* <ul className="blog__list">
-                                        <li><i className="icon-target"></i> Goal: <span>$30,000</span></li>
-                                        <li><i className="fa fa-line-chart"></i> Raised: <span>25,270</span></li>
-                                    </ul> */}
-                                    <Link href="/donate" className="theme-btn">donate now</Link>
+                                    <p className="blog__desc text-sm text-gray-600 mb-4">
+                                        Aliq is notm hendr erit a augue insu image pellen tes.
+                                    </p>
+                                    <Link href="/donate" className="theme-btn bg-blue-500 text-white py-2 px-4 rounded-lg">
+                                        Donate Now
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4">
-                        <div className="blog-content">
-                            <div className="blog-item blog-item4">
+
+                    <div className="col-lg-4 w-full md:w-1/3 p-4">
+                        <div className="blog-content bg-white shadow-lg rounded-lg overflow-hidden">
+                            <div className="blog-item">
                                 <div className="blog-img">
-                                    <img src="/images/img10.jpg" alt="" />
+                                    <img 
+                                        src="/images/mardasa2.jpg" 
+                                        alt="" 
+                                        className="w-full h-64 object-cover" 
+                                    />
                                 </div>
-                                <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/causes-detail">Skill Development Classes</Link></h3>
-                                    <p className="blog__desc">Aliq is notm hendr erit a augue insu image pellen tes.</p>
-                                    {/* <ul className="blog__list">
-                                        <li><i className="icon-target"></i> Goal: <span>$30,000</span></li>
-                                        <li><i className="fa fa-line-chart"></i> Raised: <span>25,270</span></li>
-                                    </ul> */}
-                                    <Link href="/donate" className="theme-btn">donate now</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4">
-                        <div className="blog-content">
-                            <div className="blog-item blog-item1">
-                                <div className="blog-img">
-                                    <img src="/images/img2.jpg" alt="" />
-                                </div>
-                                <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/causes-detail">Snacks Distribution</Link></h3>
-                                    <p className="blog__desc">Aliq is notm hendr erit a augue insu image pellen tes.</p>
-                                    {/* <ul className="blog__list">
-                                        <li><i className="icon-target"></i> Goal: <span>$30,000</span></li>
-                                        <li><i className="fa fa-line-chart"></i> Raised: <span>25,270</span></li>
-                                    </ul> */}
-                                    <Link href="/donate" className="theme-btn">donate now</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4">
-                        <div className="blog-content">
-                            <div className="blog-item blog-item2">
-                                <div className="blog-img">
-                                    <img src="/images/img11.jpg" alt="" />
-                                </div>
-                                <div className="blog-inner-content">
-                                    <h3 className="blog__title"><Link href="/causes-detail">Marriage Assistance</Link>
+                                <div className="blog-inner-content p-4">
+                                    <h3 className="blog__title text-lg font-semibold mb-2">
+                                        <Link href="/causes-detail">Al-Noora Quran Academy</Link>
                                     </h3>
-                                    <p className="blog__desc">Aliq is notm hendr erit a augue insu image pellen tes.</p>
-                                    {/* <ul className="blog__list">
-                                        <li><i className="icon-target"></i> Goal: <span>$30,000</span></li>
-                                        <li><i className="fa fa-line-chart"></i> Raised: <span>25,270</span></li>
-                                    </ul> */}
-                                    <Link href="/donate" className="theme-btn">donate now</Link>
+                                    <p className="blog__desc text-sm text-gray-600 mb-4">
+                                        Aliq is notm hendr erit a augue insu image pellen tes.
+                                    </p>
+                                    <Link href="/donate" className="theme-btn bg-blue-500 text-white py-2 px-4 rounded-lg">
+                                        Donate Now
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div className="col-lg-4 w-full md:w-1/3 p-4">
+                        <div className="blog-content bg-white shadow-lg rounded-lg overflow-hidden">
+                            <div className="blog-item">
+                                <div className="blog-img">
+                                    <img 
+                                        src="/images/mardasa3.jpg" 
+                                        alt="" 
+                                        className="w-full h-64 object-cover" 
+                                    />
+                                </div>
+                                <div className="blog-inner-content p-4">
+                                    <h3 className="blog__title text-lg font-semibold mb-2">
+                                        <Link href="/causes-detail">Skill Development Classes</Link>
+                                    </h3>
+                                    <p className="blog__desc text-sm text-gray-600 mb-4">
+                                        Aliq is notm hendr erit a augue insu image pellen tes.
+                                    </p>
+                                    <Link href="/donate" className="theme-btn bg-blue-500 text-white py-2 px-4 rounded-lg">
+                                        Donate Now
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 w-full md:w-1/3 p-4">
+                        <div className="blog-content bg-white shadow-lg rounded-lg overflow-hidden">
+                            <div className="blog-item">
+                                <div className="blog-img">
+                                    <img 
+                                        src="/images/iftar2.jpg" 
+                                        alt="" 
+                                        className="w-full h-64 object-cover" 
+                                    />
+                                </div>
+                                <div className="blog-inner-content p-4">
+                                    <h3 className="blog__title text-lg font-semibold mb-2">
+                                        <Link href="/causes-detail">Snacks Distribution</Link>
+                                    </h3>
+                                    <p className="blog__desc text-sm text-gray-600 mb-4">
+                                        Aliq is notm hendr erit a augue insu image pellen tes.
+                                    </p>
+                                    <Link href="/donate" className="theme-btn bg-blue-500 text-white py-2 px-4 rounded-lg">
+                                        Donate Now
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 w-full md:w-1/3 p-4">
+                        <div className="blog-content bg-white shadow-lg rounded-lg overflow-hidden">
+                            <div className="blog-item">
+                                <div className="blog-img">
+                                    <img 
+                                        src="/images/iftar3.jpg" 
+                                        alt="" 
+                                        className="w-full h-64 object-cover" 
+                                    />
+                                </div>
+                                <div className="blog-inner-content p-4">
+                                    <h3 className="blog__title text-lg font-semibold mb-2">
+                                        <Link href="/causes-detail">Marriage Assistance</Link>
+                                    </h3>
+                                    <p className="blog__desc text-sm text-gray-600 mb-4">
+                                        Aliq is notm hendr erit a augue insu image pellen tes.
+                                    </p>
+                                    <Link href="/donate" className="theme-btn bg-blue-500 text-white py-2 px-4 rounded-lg">
+                                        Donate Now
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>

@@ -18,93 +18,7 @@ const Gallery = () => {
       <section className="gallery-area2">
         <div className="container">
           <div className="section-title font-bold p-3">
-            <h2>Blood Donation Camp</h2>
-          </div>
-          <div className="row">
-            <div className="col-lg-4 col-sm-6">
-              <div className="gallery-item">
-                <img src="/images/bloodDonation2.jpg" alt="" />
-                <a href="/images/bloodDonation2.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg" >
-                  <span className="gallery-icon"></span>
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6">
-              <div className="gallery-item">
-                <img src="/images/bloodDonation3.jpg" alt="" />
-                <a href="images/bloodDonation3.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg">
-                  <span className="gallery-icon"></span>
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6">
-              <div className="gallery-item">
-                <img src="/images/bloodDonation4.jpg" alt="" />
-                <a href="images/bloodDonation4.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg">
-                  <span className="gallery-icon"></span>
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6">
-              <div className="gallery-item">
-                <img src="/images/bloodDonation5.jpg" alt="" />
-                <a href="images/bloodDonation5.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg">
-                  <span className="gallery-icon"></span>
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6">
-              <div className="gallery-item">
-                <img src="/images/bloodDonation1.jpg" alt="" />
-                <a href="images/bloodDonation1.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg">
-                  <span className="gallery-icon"></span>
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6">
-              <div className="gallery-item">
-                <img src="/images/bloodDonation6.jpg" alt="" />
-                <a href="images/bloodDonation6.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg">
-                  <span className="gallery-icon"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="section-title font-bold p-3">
-            <h2>Iftar Party</h2>
-          </div>
-          <div className="row">
-            <div className="col-lg-4 col-sm-6">
-              <div className="gallery-item">
-                <img src="/images/iftar1.jpg" alt="" />
-                <a href="/images/iftar1.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg">
-                  <span className="gallery-icon"></span>
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6">
-              <div className="gallery-item">
-                <img src="/images/iftar2.jpg" alt="" />
-                <a href="images/iftar2.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg">
-                  <span className="gallery-icon"></span>
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6">
-              <div className="gallery-item">
-                <img src="/images/iftar3.jpg" alt="" />
-                <a href="images/iftar3.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg">
-                  <span className="gallery-icon"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="section-title font-bold p-3">
-            <h2>Ration Kit Distribution</h2>
+            <h2 className='text-4xl'>Ration Kit Distribution</h2>
           </div>
           <div className="row">
             <div className="col-lg-4 col-sm-6">
@@ -159,7 +73,94 @@ const Gallery = () => {
         </div>
         <div className="container">
           <div className="section-title font-bold p-3">
-            <h2>Mardasa</h2>
+            <h2 className='text-4xl'>Blood Donation Camp</h2>
+          </div>
+          <div className="row">
+            <div className="col-lg-4 col-sm-6">
+              <div className="gallery-item">
+                <img src="/images/bloodDonation2.jpg" alt="" />
+                <a href="/images/bloodDonation2.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg" >
+                  <span className="gallery-icon"></span>
+                </a>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              <div className="gallery-item">
+                <img src="/images/bloodDonation3.jpg" alt="" />
+                <a href="images/bloodDonation3.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg">
+                  <span className="gallery-icon"></span>
+                </a>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              <div className="gallery-item">
+                <img src="/images/bloodDonation4.jpg" alt="" />
+                <a href="images/bloodDonation4.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg">
+                  <span className="gallery-icon"></span>
+                </a>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              <div className="gallery-item">
+                <img src="/images/bloodDonation5.jpg" alt="" />
+                <a href="images/bloodDonation5.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg">
+                  <span className="gallery-icon"></span>
+                </a>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              <div className="gallery-item">
+                <img src="/images/bloodDonation1.jpg" alt="" />
+                <a href="images/bloodDonation1.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg">
+                  <span className="gallery-icon"></span>
+                </a>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              <div className="gallery-item">
+                <img src="/images/bloodDonation6.jpg" alt="" />
+                <a href="images/bloodDonation6.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg">
+                  <span className="gallery-icon"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="section-title font-bold p-3">
+            <h2 className='text-4xl'>Mid Day Meal</h2>
+          </div>
+          <div className="row">
+            <div className="col-lg-4 col-sm-6">
+              <div className="gallery-item">
+                <img src="/images/iftar1.jpg" alt="" />
+                <a href="/images/iftar1.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg">
+                  <span className="gallery-icon"></span>
+                </a>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              <div className="gallery-item">
+                <img src="/images/iftar2.jpg" alt="" />
+                <a href="images/iftar2.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg">
+                  <span className="gallery-icon"></span>
+                </a>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              <div className="gallery-item">
+                <img src="/images/iftar3.jpg" alt="" />
+                <a href="images/iftar3.jpg" className="w-full h-64 object-cover shadow-sm rounded-lg">
+                  <span className="gallery-icon"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="container">
+          <div className="section-title font-bold p-3">
+            <h2 className='text-4xl'>Mardasa</h2>
           </div>
           <div className="row">
             <div className="col-lg-4 col-sm-6">
@@ -190,7 +191,7 @@ const Gallery = () => {
         </div>
         <div className="container">
           <div className="section-title font-bold p-3">
-            <h2>BoreWell</h2>
+            <h2 className='text-4xl'>BoreWell</h2>
           </div>
           <div className="row">
             <div className="col-lg-4 col-sm-6">
