@@ -43,7 +43,7 @@ const Volunteer = () => {
                                     </div>
                                     <div className="contact__item contact__item2">
                                         <h4>Send email</h4>
-                                        <a href="#">needhelp@HHF - Hopeful Heart Foundation.com</a>
+                                        <a href="#">hopefulheart1993@gmail.com</a>
                                     </div>
                                 </div>
                             </div>

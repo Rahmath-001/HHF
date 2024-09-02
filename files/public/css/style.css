@@ -2068,7 +2068,7 @@ a:hover {
     margin-top: 51px;
 }
 .causes-area .blog-content-wrap .blog-content .blog-item {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 .causes-area .blog-content-wrap .blog-content .blog-item .blog-img {
     position: relative;
@@ -3619,7 +3619,8 @@ a:hover {
     position: relative;
 }
 .team-area .team-content-wrap .team-item .team__img img {
-    width: 100%;
+    width: 360px;
+    height: 360px;
 }
 .team-area .team-content-wrap .team-item .team__img .team__img-links {
     position: absolute;

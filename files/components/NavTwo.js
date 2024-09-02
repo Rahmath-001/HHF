@@ -57,7 +57,7 @@ class NavTwo extends Component {
                                 <div className="top-action-content">
                                     <div className="info-box info-box-1 d-flex align-items-center">
                                         <ul className="d-flex align-items-center">
-                                            <li><a href="#"><i className="fa fa-envelope"></i>needhelp@HHF - Hopeful Heart Foundation.com</a>
+                                            <li><a href="#"><i className="fa fa-envelope"></i>hopefulheart1993@gmail.com</a>
                                             </li>
                                             <li><a href="#"><i className="fa fa-phone-square"></i>666 888 0000</a></li>
                                         </ul>

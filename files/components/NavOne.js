@@ -59,7 +59,7 @@ class NavOne extends Component {
                                         <div className="info-box info-box-1 d-flex align-items-center">
                                             <ul className="d-flex align-items-center">
                                                 <li><a href="#"><i
-                                                    className="fa fa-envelope"></i>needhelp@HHF - Hopeful Heart Foundation.com</a></li>
+                                                    className="fa fa-envelope"></i>hopefulheart1993@gmail.com</a></li>
                                                 <li><a href="#"><i className="fa fa-phone-square"></i>666 888 0000</a>
                                                 </li>
                                             </ul>
@@ -174,9 +174,9 @@ class NavOne extends Component {
                                 <li>
                                   <Link href="/team">our team</Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                   <Link href="/sponsor">sponsors</Link>
-                                </li>
+                                </li> */}
                               </ul>
                             </nav>
                           </div>
