@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { MailJS } from "mailjs"; 
 
 const Donate = () => {
   const [formData, setFormData] = useState({
@@ -22,10 +23,48 @@ const Donate = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Donation Details:", formData);
-    // Handle form submission (e.g., send data to the server)
+
+    const mailJS = new MailJS({
+      apiKey: "your-mailjs-api-key", // Replace with your MailJS API key
+    });
+
+    try {
+      // Send email
+      await mailJS.send({
+        to: "your-email@example.com", // Replace with your email
+        subject: "New Donation Received",
+        text: `Donation Details:
+               Name: ${formData.firstName} ${formData.lastName}
+               Email: ${formData.email}
+               Phone: ${formData.phone}
+               Address: ${formData.address}
+               Country: ${formData.country}
+               Comment: ${formData.comment}
+               Donation Amount: $${formData.amount}
+               UPI Transaction ID: ${formData.upiTransactionId}`,
+      });
+
+      alert("Donation details sent successfully!");
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      alert("Failed to send donation details. Please try again.");
+    }
+
+    // Optionally reset the form
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      address: "",
+      country: "",
+      comment: "",
+      amount: "",
+      upiTransactionId: "",
+    });
   };
 
   return (
@@ -203,30 +242,21 @@ const Donate = () => {
                   </div>
                 </div>
               </div>
-              <div className="side-widget author-box bg-white p-8 rounded-lg shadow-lg">
-                <div className="author__avatar mb-4">
-                  <img
-                    src="/images/author-avatar.jpg"
-                    alt=""
-                    className="w-16 h-16 rounded-full"
-                  />
-                </div>
-                <div className="author__detail">
-                  <span className="author__meta block text-gray-500 mb-2">
-                    Created April 11, 2018
-                  </span>
-                  <h4 className="author__title text-lg font-semibold text-gray-800 mb-2">
-                    Organizer: <a href="#">Jessica Smith</a>
-                  </h4>
-                  <ul className="author__list">
-                    <li>
-                      <i className="fa fa-tag"></i> Education
-                    </li>
-                    <li>
-                      <i className="fa fa-map-marker"></i> Wrightwood, Canada
-                    </li>
-                  </ul>
-                </div>
+              <div className="side-widget author-box bg-white p-8 rounded-lg shadow-lg mb-6">
+                <h3 className="widget__title text-xl font-semibold text-gray-800 mb-4">
+                  About Us
+                </h3>
+                <p className="text-gray-600">
+                  We are a non-profit organization working to provide
+                  underprivileged children with educational opportunities and
+                  support.
+                </p>
+                <Link
+                  href="/about"
+                  className="theme-btn bg-blue-500 text-white py-2 px-4 rounded-lg mt-4"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
           </div>
