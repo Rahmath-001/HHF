@@ -48,7 +48,7 @@ const Events = () => {
                         <div className="blog-content">
                             <div className="blog-item blog-item3">
                                 <div className="blog-img">
-                                    <img src="/images/img9.jpg" alt="" className="w-full h-80 object-cover" />
+                                    <img src="/images/health_camp.jpeg" alt="" className="w-full h-80 object-cover" />
                                 </div>
                                 <div className="blog-inner-content">
                                     <h3 className="blog__title">

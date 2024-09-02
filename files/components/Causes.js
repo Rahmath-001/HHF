@@ -11,7 +11,7 @@ const Causes = () => {
                             <div className="blog-item">
                                 <div className="blog-img">
                                     <img 
-                                        src="/images/rationKit4.jpeg" 
+                                        src="/images/ration_kit.jpeg" 
                                         alt="" 
                                         className="w-full h-64 object-cover" 
                                     />
@@ -86,7 +86,7 @@ const Causes = () => {
                             <div className="blog-item">
                                 <div className="blog-img">
                                     <img 
-                                        src="/images/mardasa3.jpg" 
+                                        src="/images/skill_dev.jpeg" 
                                         alt="" 
                                         className="w-full h-64 object-cover" 
                                     />
@@ -111,7 +111,7 @@ const Causes = () => {
                             <div className="blog-item">
                                 <div className="blog-img">
                                     <img 
-                                        src="/images/iftar2.jpg" 
+                                        src="/images/snacks.jpeg" 
                                         alt="" 
                                         className="w-full h-64 object-cover" 
                                     />
@@ -136,7 +136,7 @@ const Causes = () => {
                             <div className="blog-item">
                                 <div className="blog-img">
                                     <img 
-                                        src="/images/iftar3.jpg" 
+                                        src="/images/marriage.jpg" 
                                         alt="" 
                                         className="w-full h-64 object-cover" 
                                     />
