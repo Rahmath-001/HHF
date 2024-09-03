@@ -11,7 +11,7 @@
     "autoprefixer": "^10.4.20",
     "bootstrap": "^5.3.3",
     "emailjs-com": "^3.2.0",
-    "mailjs": "^0.1.6",
+    "mailjs": "^0.1.9",
     "next": "^14.2.5",
     "postcss": "^8.4.42",
     "react": "^18.3.1",
@@ -21,7 +21,7 @@
     "react-modal-video": "^2.0.2",
     "react-visibility-sensor": "^5.1.1",
     "sass": "^1.77.8",
-    "swiper": "^11.1.12"
+    "swiper": "^5.3.6"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
