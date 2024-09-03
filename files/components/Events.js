@@ -11,9 +11,6 @@ const Events = () => {
                             <div className="blog-item blog-item1">
                                 <div className="blog-img">
                                     <img src="/images/iftar1.jpg" alt="" className="w-full h-80 object-cover" />
-                                    <span className="blog__tag blog__tag1">
-                                        <span className="date__num-text">Every Friday</span>
-                                    </span>
                                 </div>
                                 <div className="blog-inner-content">
                                     <h3 className="blog__title">
@@ -103,9 +100,6 @@ const Events = () => {
                             <div className="blog-item blog-item2">
                                 <div className="blog-img">
                                     <img src="/images/img18.jpg" alt="" className="w-full h-80 object-cover" />
-                                    <span className="blog__tag blog__tag2">
-                                        <span className="date__num-text">Food Distribution</span>
-                                    </span>
                                 </div>
                                 <div className="blog-inner-content">
                                     <h3 className="blog__title">

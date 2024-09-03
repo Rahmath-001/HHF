@@ -24,9 +24,6 @@ const AboutPage = () => {
                         <div className="col-lg-7">
                             <div className="about-heading">
                                 <div className="section-heading">
-                                    <div className="section-icon">
-                                        <img src="/images/section-icon.png" alt="section-icon" />
-                                    </div>
                                     <h2 className="section__title">Our Vision</h2>
                                     <p className="section__meta">learn about our vision</p>
                                     <p className="section__desc">
@@ -54,9 +51,6 @@ const AboutPage = () => {
                         <div className="col-lg-7">
                             <div className="about-heading">
                                 <div className="section-heading">
-                                    <div className="section-icon">
-                                        <img src="/images/section-icon.png" alt="section-icon" />
-                                    </div>
                                     <h2 className="section__title">Our Mission</h2>
                                     <p className="section__meta">learn about our mission</p>
                                     <p className="section__desc">

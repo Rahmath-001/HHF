@@ -167,7 +167,7 @@ class NavOne extends Component {
                                   <Link href="/contact">Contact Us</Link>
                                 </li>
                                 <li>
-                                  <Link href="/volunteer">
+                                  <Link href="https://forms.gle/wAkbHJnDh8qEdJ8z5">
                                     become a volunteer
                                   </Link>
                                 </li>
@@ -227,7 +227,7 @@ class NavOne extends Component {
                       <Link href="/contact">contact Us</Link>
                     </li>
                     <li className="sidenav__item">
-                      <Link href="/volunteer">become a volunteer</Link>
+                      <Link href="https://forms.gle/wAkbHJnDh8qEdJ8z5">become a volunteer</Link>
                     </li>
                     <li className="sidenav__item">
                       <Link href="/team">our team</Link>

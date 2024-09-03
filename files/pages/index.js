@@ -29,7 +29,7 @@ const HomePage = () => {
           <AboutArea/>
           <CausesArea />
           {/* <ClientsLogo /> */}
-          <HelpingArea />
+          {/* <HelpingArea /> */}
           <TeamArea />
           <CallToAction />
           {/* <BlogHome /> */}
