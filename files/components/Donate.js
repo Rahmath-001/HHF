@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Link from "next/link";
-import { MailJS } from "mailjs"; 
+import emailjs from "emailjs-com";
 
 const Donate = () => {
+
+  const form = useRef(); // Reference to the form
+  const [popupMessage, setPopupMessage] = useState(""); // State for pop-up message
+  const [popupVisible, setPopupVisible] = useState(false); // State for pop-up visibility
+  const [isError, setIsError] = useState(false);
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -14,6 +20,7 @@ const Donate = () => {
     amount: "",
     upiTransactionId: "",
   });
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,33 +34,31 @@ const Donate = () => {
     e.preventDefault();
     console.log("Donation Details:", formData);
 
-    const mailJS = new MailJS({
-      apiKey: "your-mailjs-api-key", // Replace with your MailJS API key
-    });
-
     try {
-      // Send email
-      await mailJS.send({
-        to: "your-email@example.com", // Replace with your email
-        subject: "New Donation Received",
-        text: `Donation Details:
-               Name: ${formData.firstName} ${formData.lastName}
-               Email: ${formData.email}
-               Phone: ${formData.phone}
-               Address: ${formData.address}
-               Country: ${formData.country}
-               Comment: ${formData.comment}
-               Donation Amount: $${formData.amount}
-               UPI Transaction ID: ${formData.upiTransactionId}`,
-      });
+      // Send email using EmailJS
+      await emailjs.send(
+        "service_435oocy", // Service ID
+        "template_nelwwle", // Template ID
+        {
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          address: formData.address,
+          country: formData.country,
+          comment: formData.comment,
+          amount: formData.amount,
+          upiTransactionId: formData.upiTransactionId,
+        },
+        "iaoIQ7q9B7zNIkDuP" // Public ID
+      );
 
-      alert("Donation details sent successfully!");
+      showPopup("Donation details sent successfully!", false); // Show success message
     } catch (error) {
       console.error("Failed to send email:", error);
-      alert("Failed to send donation details. Please try again.");
+      showPopup("Failed to send donation details. Please try again.", true); 
     }
 
-    // Optionally reset the form
     setFormData({
       firstName: "",
       lastName: "",
@@ -67,6 +72,15 @@ const Donate = () => {
     });
   };
 
+  const showPopup = (message, error) => {
+    setPopupMessage(message);
+    setIsError(error);
+    setPopupVisible(true);
+    setTimeout(() => {
+      setPopupVisible(false);
+    }, 3000); // Hide after 3 seconds
+  };
+
   return (
     <section className="donate-area2 py-12 bg-gray-100">
       <div className="container mx-auto">
@@ -77,7 +91,7 @@ const Donate = () => {
                 Enter Your Donation
               </h3>
               <div className="form-shared">
-                <form onSubmit={handleSubmit}>
+                <form ref={form} onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 gap-6 mb-6">
                     <div className="yellow-form relative">
                       <input
@@ -262,6 +276,15 @@ const Donate = () => {
           </div>
         </div>
       </div>
+      {popupVisible && (
+        <div
+          className={`fixed top-4 right-4 p-4 rounded-lg shadow-lg text-white transition-opacity duration-500 ${
+            isError ? "bg-red-500" : "bg-green-500"
+          }`}
+        >
+          {popupMessage}
+        </div>
+      )}
     </section>
   );
 };
