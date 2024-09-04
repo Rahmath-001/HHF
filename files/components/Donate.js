@@ -3,7 +3,6 @@ import Link from "next/link";
 import emailjs from "emailjs-com";
 
 const Donate = () => {
-
   const form = useRef(); // Reference to the form
   const [popupMessage, setPopupMessage] = useState(""); // State for pop-up message
   const [popupVisible, setPopupVisible] = useState(false); // State for pop-up visibility
@@ -20,7 +19,6 @@ const Donate = () => {
     amount: "",
     upiTransactionId: "",
   });
-
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -201,17 +199,6 @@ const Donate = () => {
                     />
                   </div>
 
-                  <div className="text-center mb-6">
-                    <p className="text-gray-700 font-medium mb-2">
-                      Scan the QR code below to make a payment
-                    </p>
-                    <img
-                      src="/images/qr_code.jpeg"
-                      alt="Google Pay QR Code"
-                      className="mx-auto w-48 h-auto"
-                    />
-                  </div>
-
                   <div className="text-center">
                     <button
                       type="submit"
@@ -227,50 +214,15 @@ const Donate = () => {
 
           <div className="w-full lg:w-4/12 px-4">
             <div className="sidebar-shared">
-              <div className="side-widget blog-content bg-white p-8 rounded-lg shadow-lg mb-6">
-                <div className="blog-item">
-                  <div className="blog-img mb-4">
-                    <img
-                      src="/images/img15.jpg"
-                      alt=""
-                      className="w-full h-auto rounded-lg"
-                    />
-                  </div>
-                  <div className="blog-inner-content">
-                    <h3 className="blog__title text-xl font-semibold text-gray-800 mb-4">
-                      <Link href="/causes-detail">They Want to Study</Link>
-                    </h3>
-                    <ul className="blog__list mb-4">
-                      <li>
-                        <i className="icon-target"></i> Goal:{" "}
-                        <span>$30,000</span>
-                      </li>
-                      <li>
-                        <i className="fa fa-line-chart"></i> Raised:{" "}
-                        <span>$25,270</span>
-                      </li>
-                    </ul>
-                    <p className="blog__desc text-gray-600">
-                      Raised by 25 donors
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="side-widget author-box bg-white p-8 rounded-lg shadow-lg mb-6">
-                <h3 className="widget__title text-xl font-semibold text-gray-800 mb-4">
-                  About Us
-                </h3>
-                <p className="text-gray-600">
-                  We are a non-profit organization working to provide
-                  underprivileged children with educational opportunities and
-                  support.
+              <div className="text-center mb-6">
+                <p className="text-gray-700 font-medium mb-2">
+                  Scan the QR code below to make a payment
                 </p>
-                <Link
-                  href="/about"
-                  className="theme-btn bg-blue-500 text-white py-2 px-4 rounded-lg mt-4"
-                >
-                  Read More
-                </Link>
+                <img
+                  src="/images/qr_code.jpeg"
+                  alt="Google Pay QR Code"
+                  className="w-full h-auto" // Update the class to make the image take full width
+                />
               </div>
             </div>
           </div>
