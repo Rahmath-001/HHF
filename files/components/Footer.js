@@ -1,150 +1,138 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
 class Footer extends Component {
-    constructor(){
-        super()
-        this.state = {
-          scrollBtn: false
-        }
+  constructor() {
+    super();
+    this.state = {
+      scrollBtn: false,
+    };
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll = () => {
+    if (window.scrollY > 100) {
+      this.setState({
+        scrollBtn: true,
+      });
+    } else if (window.scrollY < 100) {
+      this.setState({
+        scrollBtn: false,
+      });
     }
+  };
 
-    componentDidMount(){
-        window.addEventListener('scroll', this.handleScroll);
-    }
+  scrollTop = () => {
+    window.scrollTo(0, 0);
+  };
 
-    handleScroll = () => {
+  render() {
+    return (
+      <footer
+        style={{ backgroundColor: "#003366" }}
+        className="text-white py-10"
+      >
+        {/* Footer top section */}
+        <div className="container mx-auto px-4">
+          <div className="footer-top grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
+            {/* About section */}
+            <div className="footer-item">
+              <h3 className="text-xl font-semibold mb-4">About</h3>
+              <ul className="space-y-2">
+                <li>
+                  <a href="/causes" className="hover:text-gray-400">
+                    Causes
+                  </a>
+                </li>
+                <li>
+                  <a href="/about" className="hover:text-gray-400">
+                    About
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-      if (window.scrollY > 100) {
-        this.setState({
-            scrollBtn: true
-        });
-      } else if (window.scrollY < 100) {
-        this.setState({
-            scrollBtn: false
-        });
-      }
+            {/* Contact section */}
+            <div className="footer-item">
+              <h3 className="text-xl font-semibold mb-4">Contact</h3>
+              <ul className="space-y-2">
+                <li>
+                  18-12-418/O, Yousufain Colony, Omer Colony, Hafiz Baba Nagar,
+                  Hyderabad, Telangana 500005
+                </li>
+                <li>
+                  <a
+                    href="mailto:hopefulheart1993@gmail.com"
+                    className="hover:text-gray-400"
+                  >
+                    hopefulheart1993@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:6668880000" className="hover:text-gray-400">
+                    090639 06886
+                  </a>
+                </li>
+              </ul>
 
-    }
-
-    scrollTop = () => {
-        window.scrollTo(0, 0);
-    }
-
-    render() {
-        return (
-          <div>
-            <section className="footer-area">
-              <div className="newsletter-area">
-                <div className="container">
-                  <div className="row">
-                    {/* <div className="col-lg-6 mx-auto text-center">
-                                    <div className="section-heading footer-heading">
-                                        <div className="section-icon">
-        
-                                        </div>
-                                        <h2 className="section__title text__white">Newsletter</h2>
-                                        <p className="section__meta">stay updated</p>
-                                    </div>
-                                    <div className="newsletter-form">
-                                        <div className="form-shared">
-                                            <form action="#">
-                                                <div className="row">
-                                                    <div className="col-lg-9">
-                                                        <div className="form-group">
-                                                            <input type="email" className="form-control"
-                                                                   placeholder="Email address" />
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-lg-3">
-                                                        <button className="theme-btn submit__btn"
-                                                                type="submit">subscribe
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div> */}
-                  </div>
-                </div>
+              {/* Social media icons */}
+              <div className="mt-4">
+                <ul className="flex justify-center md:justify-start space-x-4">
+                  <li>
+                    <a
+                      href="#"
+                      className="hover:text-gray-400"
+                      aria-label="Facebook"
+                    >
+                      <i className="fa fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="hover:text-gray-400"
+                      aria-label="Instagram"
+                    >
+                      <i className="fa fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <div className="footer-top">
-                <div className="container">
-                  <div className="row footer-widget-wrap">
-                    <div className="col footer-item footer-item1">
-                      <h3 className="widget__title">about</h3>
-                      <ul className="foot__links">
-                        <li>
-                          <a href="/causes">causes</a>
-                        </li>
-                        <li>
-                          <a href="/about">about</a>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div className="col footer-item footer-item4">
-                      <h3 className="widget__title">contact</h3>
-                      <ul className="contact__info">
-                        <li>
-                          18-12-418/O, Yousufain Colony, Omer Colony, Hafiz Baba
-                          Nagar, Hyderabad, Telangana 500005
-                        </li>
-                        <li>
-                          <a href="mailto:hopefulheart1993@gmail.com">
-                            hopefulheart1993@gmail.com
-                          </a>
-                        </li>
-                        <li>
-                          <a href="tel:6668880000">090639 06886 </a>
-                        </li>
-                      </ul>
-                      <div className="footer__social">
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i className="fa fa-facebook"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i className="fa fa-instagram"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="footer-copyright">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-12">
-                      <div className="copyright-desc">
-                        <p>
-                          © Copyright 2024 by{" "}
-                          <a href="hopefulheartfoundation.in">
-                            HopefulHeartFoundation.in
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <div
-              onClick={this.scrollTop}
-              id="back-to-top"
-              className={this.state.scrollBtn ? "back-btn-shown" : ""}
-            >
-              <i className="fa fa-angle-up" title="Go top"></i>
             </div>
           </div>
-        );
-    }
+        </div>
+
+        {/* Footer bottom section */}
+        <div className="border-t border-gray-700 mt-10 pt-6">
+          <div className="container mx-auto px-4 text-center">
+            <p className="text-sm">
+              © Copyright 2024 by{" "}
+              <a
+                href="https://hopefulheartfoundation.in"
+                className="text-blue-400 hover:underline"
+              >
+                HopefulHeartFoundation.in
+              </a>
+            </p>
+          </div>
+        </div>
+
+        {/* Back to top button */}
+        <div
+          onClick={this.scrollTop}
+          id="back-to-top"
+          className={`fixed bottom-4 right-4 p-3 bg-blue-600 text-white rounded-full cursor-pointer shadow-lg transition-opacity ${
+            this.state.scrollBtn ? "opacity-100" : "opacity-0"
+          }`}
+          title="Go top"
+        >
+          <i className="fa fa-angle-up"></i>
+        </div>
+      </footer>
+    );
+  }
 }
 
 export default Footer;
