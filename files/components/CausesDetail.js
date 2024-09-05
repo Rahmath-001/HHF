@@ -229,9 +229,7 @@ const CausesDetail = () => {
                                 <h2 className="widget__title">Share Cause</h2>
                                 <div className="side-share-profile">
                                     <ul>
-                                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i className="fa fa-pinterest"></i></a></li>
                                         <li><a href="#"><i className="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>

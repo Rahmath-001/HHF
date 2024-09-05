@@ -21,8 +21,7 @@ const ServiceArea = () => {
                             <div className="section-icon">
                                 <img src="/images/section-icon.png" alt="section-icon" />
                             </div>
-                            <h2 className="section__title">We Believe that
-                                We can Save More Lifes with you</h2>
+                            <h2 className="section__title">We believe that, together, we can provide dignity, support, and hope to more lives in need.</h2>
                             <p className="section__meta">help us now</p>
                         </div>
                     </div>
@@ -36,11 +35,7 @@ const ServiceArea = () => {
                                 </div>
                                 <div className="service-content">
                                     <h4 className="service__title">hope</h4>
-                                    <p className="service__desc">
-                                        Lorem ipsum is simply free text
-                                        available
-                                        in the market wesbites.
-                                    </p>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -53,11 +48,7 @@ const ServiceArea = () => {
                                 </div>
                                 <div className="service-content">
                                     <h4 className="service__title">prayers</h4>
-                                    <p className="service__desc">
-                                        Lorem ipsum is simply free text
-                                        available
-                                        in the market wesbites.
-                                    </p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -70,11 +61,7 @@ const ServiceArea = () => {
                                 </div>
                                 <div className="service-content">
                                     <h4 className="service__title">peace</h4>
-                                    <p className="service__desc">
-                                        Lorem ipsum is simply free text
-                                        available
-                                        in the market wesbites.
-                                    </p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -87,11 +74,7 @@ const ServiceArea = () => {
                                 </div>
                                 <div className="service-content">
                                     <h4 className="service__title">donation</h4>
-                                    <p className="service__desc">
-                                        Lorem ipsum is simply free text
-                                        available
-                                        in the market wesbites.
-                                    </p>
+                                   
                                 </div>
                             </div>
                         </div>

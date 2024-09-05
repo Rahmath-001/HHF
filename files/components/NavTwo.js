@@ -93,9 +93,10 @@ class NavTwo extends Component {
                       <div className="ostion-logo">
                         <Link href="/">
                           <img
-                            src="/images/logo2.png"
+                            src="/images/logo.png"
                             alt="HHF - Hopeful Heart Foundation"
                             title="HHF - Hopeful Heart Foundation"
+                            className="h-30 w-40"
                           />
                         </Link>
                       </div>
@@ -233,35 +234,10 @@ class NavTwo extends Component {
                       <li>
                         <Link href="/team">our team</Link>
                       </li>
-                      <li>
-                        <Link href="/sponsor">sponsors</Link>
-                      </li>
                     </ul>
                   </li>
                   <li className="sidenav__item">
                     <Link href="/contact">contact</Link>
-                  </li>
-                </ul>
-                <ul className="side-social">
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-youtube-play"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fa fa-google-plus"></i>
-                    </a>
                   </li>
                 </ul>
                 <div className="side-btn">

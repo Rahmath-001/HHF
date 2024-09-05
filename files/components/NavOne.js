@@ -98,6 +98,7 @@ class NavOne extends Component {
                               src="/images/logo.png"
                               alt="HHF - Hopeful Heart Foundation"
                               title="HHF - Hopeful Heart Foundation"
+                              className="img-fluid w-40 h-30"
                             />
                           </Link>
                         </div>
@@ -231,32 +232,6 @@ class NavOne extends Component {
                     </li>
                     <li className="sidenav__item">
                       <Link href="/team">our team</Link>
-                    </li>
-                    <li className="sidenav__item">
-                      <Link href="/sponsor">sponsors</Link>
-                    </li>
-                    <li className="sidenav__item"></li>
-                  </ul>
-                  <ul className="side-social">
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-youtube-play"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-google-plus"></i>
-                      </a>
                     </li>
                   </ul>
                   <div className="side-btn">

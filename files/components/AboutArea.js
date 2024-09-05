@@ -7,14 +7,15 @@ const AboutArea = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-large-img ">
-                {/* <ima src='/images/CopyofHopefulHeartFoundationLogo.png' alt="" /> */}
-                <img src="/images/1894X605.jpg" alt="" className="h-[400px]" />
+                <img
+                  src="/images/aboutpage.png"
+                  alt=""
+                />
               </div>
             </div>
             <div className="col-lg-5">
               <div className="about-semi-img">
-                {/* <ima src='/images/CopyofHopefulHeartFoundationLogo.png' alt="" /> */}
-                <img src="/images/1894X605.jpg" alt="" />
+                <img src="/images/removebg-preview.png" alt="" />
               </div>
             </div>
             <div className="col-lg-7">

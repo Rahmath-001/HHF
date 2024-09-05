@@ -56,9 +56,7 @@ return (
                             consectetur adipiscing ullam blandit hendrerit faucibus suspendisse.
                         </p>
                         <ul className="section__list">
-                            <li><a href="#"><i className="fa fa-twitter"></i></a></li>
                             <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i className="fa fa-pinterest"></i></a></li>
                             <li><a href="#"><i className="fa fa-instagram"></i></a></li>
                         </ul>
                     </div>
@@ -96,20 +94,11 @@ return (
             </div>
             <div className="row contact-detail-action">
                 <div className="col-lg-4">
-                    <div className="contact-item contact-item1">
-                        <h3 className="contact__title">About</h3>
-                        <p className="contact__desc">
-                            Lorem ipsum is simply free text dolor sit
-                            amet, duise consectetur ullam blandit
-                        </p>
-                    </div>
-                </div>
-                <div className="col-lg-4">
                     <div className="contact-item contact-item2">
                         <h3 className="contact__title">Address</h3>
                         <p className="contact__desc">
-                            660 broklyn street , 88 new york, United states of
-                            america
+                           18-12-418/O, Yousufain Colony, Omer Colony, Hafiz Baba Nagar, Hyderabad, Telangana 500005
+
                         </p>
                     </div>
                 </div>
@@ -118,7 +107,7 @@ return (
                         <h3 className="contact__title">Contact</h3>
                         <p className="contact__desc">
                             hopefulheart1993@gmail.com <br />
-                            666 888 000
+                           090639 06886
                         </p>
                     </div>
                 </div>
