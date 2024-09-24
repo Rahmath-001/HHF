@@ -31,7 +31,7 @@ const SliderOne = () => {
                                         <div className="slider-heading">
                                             <p className="slider__meta">welcome to HHF - Hopeful Heart Foundation</p>
                                             <h2 className="slider__title">Lend the helping hand get involved</h2>
-                                            <a href="#" className="theme-btn">discover more</a>
+                                            <a href="/about"  className="theme-btn">discover more</a>
                                         </div>
                                     </div>
                                 </div>

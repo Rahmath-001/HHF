@@ -77,29 +77,38 @@ class Footer extends Component {
                 </li>
               </ul>
 
-              {/* Social media icons */}
-              <div className="mt-4">
+      {/* Social media icons */}
+      <ul className="space-y-2" style={{
+  height: "50px",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+}}>
+  <li>
+    <a
+      href="#"
+      className="hover:text-gray-400"
+      aria-label="Facebook"
+    >
+      <i className="fa fa-facebook" style={{ width: "24px", height: "24px", fontSize: "26px", marginRight: "15px" }}></i> </a>
+  </li>
+  <li>
+    <a
+      target="_blank"
+      href="https://www.instagram.com/hopeful.heart.foundation/"
+      className="hover:text-gray-400"
+      aria-label="Instagram"
+    >
+      <i className="fa fa-instagram" style={{ width: "24px", height: "24px", fontSize: "28px" }}></i> </a>
+  </li>
+</ul>
+
+              
+              {/* <div className="mt-4">
                 <ul className="flex justify-center md:justify-start space-x-4">
-                  <li>
-                    <a
-                      href="#"
-                      className="hover:text-gray-400"
-                      aria-label="Facebook"
-                    >
-                      <i className="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="hover:text-gray-400"
-                      aria-label="Instagram"
-                    >
-                      <i className="fa fa-instagram"></i>
-                    </a>
-                  </li>
+                  
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

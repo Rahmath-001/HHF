@@ -6,11 +6,14 @@ const AboutArea = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <div className="about-large-img ">
-                <img
-                  src="/images/aboutpage.png"
-                  alt=""
-                />
+              <div className="about-heading" style={{margin:" 50px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    paddingBottom: "45px"}}>
+                <div className='section-heading'>
+                <h1 style={{fontSize:"100px"}} className="section__title">ABOUT US</h1>
+                </div>
               </div>
             </div>
             <div className="col-lg-5">
