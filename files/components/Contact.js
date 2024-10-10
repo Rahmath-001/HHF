@@ -126,7 +126,7 @@ return (
           <div className="contact-item contact-item2">
             <h3 className="contact__title">Address</h3>
             <p className="contact__desc">
-              18-12-418/O, Yousufain Colony, Omer Colony, Hafiz Baba Nagar,
+              18-12-418/O/35/12/A, Omer Colony, Hafiz Baba Nagar,
               Hyderabad, Telangana 500005
             </p>
           </div>

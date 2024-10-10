@@ -73,10 +73,10 @@ const SliderTwo = () => {
                         </div>
                     </div>
                 </Swiper>
-                <div className="owl-dots">
+                {/* <div className="owl-dots">
                     <div onClick={goPrev} className="owl-dot"><span></span></div>
                     <div onClick={goNext} className="owl-dot"><span></span></div>
-                </div>
+                </div> */}
             </div>
         </section>
     );
