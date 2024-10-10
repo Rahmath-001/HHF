@@ -1250,7 +1250,7 @@ a:hover {
     BREADCRUMB AREA
 =====================================*/
 .breadcrumb-area {
-    background-color: #62666c;
+    background-image: url('../images/breadcrum.png');
     position: relative;
     z-index: 1;
     color: #66B2FF;
